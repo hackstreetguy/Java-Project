@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="modewt" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="addvn" layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="187.0" promptText="Vertex Name" AnchorPane.leftAnchor="25.0" />
+        <TextField layoutX="185.0" layoutY="45.0" prefHeight="26.0" prefWidth="120.0" promptText="x cordinate" AnchorPane.leftAnchor="250.0" fx:id="xc" />
+        <TextField fx:id="yc" layoutX="316.0" layoutY="45.0" prefHeight="26.0" prefWidth="120.0" promptText="Y" AnchorPane.leftAnchor="400.0" />
+        <Button fx:id="kll" layoutX="488.0" layoutY="45.0" mnemonicParsing="false" onAction="#buttonver" text="Add Vertex" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="600.0">
+         <rotationAxis>
+            <Point3D x="1.0" y="1.0" z="1.0" />
+         </rotationAxis></Button>
+        <TextField fx:id="edwt" layoutX="22.0" layoutY="152.0" prefHeight="31.0" prefWidth="120.0" promptText="Weight" AnchorPane.leftAnchor="400.0" />
+        <TextField fx:id="edfr" layoutX="29.0" layoutY="150.0" prefHeight="31.0" prefWidth="171.0" promptText="From" AnchorPane.leftAnchor="29.0" />
+        <TextField fx:id="edto" layoutX="335.0" layoutY="151.0" prefHeight="31.0" prefWidth="120.0" promptText="To" AnchorPane.leftAnchor="250.0" />
+        <Button layoutX="488.0" layoutY="148.0" mnemonicParsing="false" onAction="#buttonedge" prefHeight="31.0" prefWidth="100.0" text="Add Edge" AnchorPane.leftAnchor="600.0" />
+        <TextField fx:id="delv" layoutX="30.0" layoutY="85.0" prefHeight="31.0" prefWidth="171.0" promptText="delete vertex" />
+        <Button fx:id="as" layoutX="584.0" layoutY="85.0" mnemonicParsing="false" onAction="#buttondelv" prefHeight="31.0" prefWidth="113.0" text="Delete Vertex" textFill="#fc0000" textOverrun="CENTER_ELLIPSIS" />
+        <TextField fx:id="delf" layoutX="27.0" layoutY="243.0" prefHeight="21.0" prefWidth="158.0" promptText="Del From" />
+        <TextField fx:id="delt" layoutX="247.0" layoutY="247.0" prefHeight="21.0" prefWidth="127.0" promptText="Del To" />
+        <Button fx:id="ghg" layoutX="573.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttondelee" prefHeight="31.0" prefWidth="120.0" text="Delete Edge" textFill="#e80909" />
+        <TextField fx:id="sv" layoutX="35.0" layoutY="283.0" prefHeight="31.0" prefWidth="158.0" promptText="Vertex Name" />
+        <Button fx:id="bnm" layoutX="576.0" layoutY="276.0" mnemonicParsing="false" onAction="#buttonserv" prefHeight="21.0" prefWidth="120.0" text="Search Vertex" />
+        <TextField fx:id="modver" layoutX="32.0" layoutY="323.0" prefHeight="26.0" prefWidth="171.0" promptText="Vertex Name" />
+        <TextField fx:id="modverx" layoutX="253.0" layoutY="323.0" prefHeight="31.0" prefWidth="127.0" promptText="X" />
+        <TextField fx:id="modvery" layoutX="410.0" layoutY="323.0" prefHeight="31.0" prefWidth="120.0" promptText="Y" />
+        <Button fx:id="lop" layoutX="556.0" layoutY="323.0" mnemonicParsing="false" onAction="#buttonmodv" prefHeight="31.0" prefWidth="142.0" text="Modify Vertex" textFill="#2506ee" />
+        <TextField fx:id="sef" layoutX="32.0" layoutY="374.0" prefHeight="26.0" prefWidth="171.0" promptText="From" />
+        <TextField fx:id="set" layoutX="222.0" layoutY="374.0" promptText="To" />
+        <Button fx:id="tot" layoutX="564.0" layoutY="374.0" mnemonicParsing="false" onAction="#buttonsered" prefHeight="31.0" prefWidth="135.0" text="Search Edge" />
+        <TextField fx:id="mho" layoutX="32.0" layoutY="194.0" prefHeight="0.0" prefWidth="151.0" promptText="From" />
+        <TextField fx:id="nho" layoutX="222.0" layoutY="198.0" prefHeight="31.0" prefWidth="165.0" promptText="To" />
+        <TextField fx:id="kho" layoutX="411.0" layoutY="198.0" prefHeight="21.0" prefWidth="187.0" promptText="New Weight" />
+        <Button fx:id="kjhg" layoutX="604.0" layoutY="198.0" mnemonicParsing="false" onAction="#buttonmodedge" prefHeight="21.0" prefWidth="67.0" text="Modify" textFill="#420aeb" />
+        <TextField fx:id="ffff" layoutX="32.0" layoutY="474.0" promptText="Root" />
+        <TextField fx:id="tttt" layoutX="222.0" layoutY="474.0" prefHeight="26.0" prefWidth="187.0" promptText="Destination" />
+        <Button fx:id="mon" layoutX="571.0" layoutY="474.0" mnemonicParsing="false" onAction="#buttondj" prefHeight="31.0" prefWidth="120.0" text="Dijkshtra Path" />
+      <TextField fx:id="imp" layoutX="32.0" layoutY="8.0" onAction="#buttonimport" prefHeight="31.0" prefWidth="187.0" promptText="enter file name to read" />
+      <Button fx:id="port" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonimport" prefHeight="31.0" prefWidth="100.0" text="Import" textFill="#0aeb11" />
+      <Button fx:id="expo" layoutX="386.0" layoutY="562.0" mnemonicParsing="false" onAction="#buttonexport" prefHeight="31.0" prefWidth="187.0" text="Export" />
+    </children>
+</AnchorPane>
